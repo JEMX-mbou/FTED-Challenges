@@ -1,0 +1,45 @@
+@use "base/main";
+@use "layout";
+@use "theme/colors";
+@use "theme/root";
+
+@use "utils/function/v";
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300;1,700&family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap");
+
+main {
+  padding: 4rem 0;
+  background-image: url(../img/bg.jpeg);
+}
+
+a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: v.g("txt");
+  &:hover {
+    color: v.g("a-4");
+  }
+}
+
+.reduce-block {
+  .inner {
+    height: 100%;
+    padding: 1rem;
+    background-color: #ffffff99;
+  }
+
+  h2 {
+    font-weight: bold;
+    color: v.g("a-1");
+    font-size: 5em;
+    line-height: 1em;
+  }
+  h4 {
+    font-weight: normal;
+  }
+  p,
+  a {
+    font-size: 0.7em;
+    line-height: 1.3em;
+  }
+}
