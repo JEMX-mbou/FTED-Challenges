@@ -1,9 +1,9 @@
-@use '../function/conf';
-@use '../function/spacer';
+@use "../function/conf";
+@use "../function/spacer";
 
 // Looping through gutter amount specified in conf/layout.
 // Default gutter amount is 10.
-@for $i from 0 through conf.get('layout.spacer.amount') {
+@for $i from 0 through conf.get("layout.spacer.amount") {
   // spacer-size variable is declared.
   // layout.spacer-value function is used
   // $i * .5rem;
