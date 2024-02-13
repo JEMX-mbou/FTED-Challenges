@@ -1,0 +1,30 @@
+@use "base/main";
+@use "layout";
+@use "theme/colors";
+@use "theme/root";
+
+@use "utils/function/v";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&family=Oswald:wght@400;600&display=swap");
+
+nav {
+  position: absolute;
+  inset: 0 0 auto 0;
+  background-color: v.g("bg");
+  border-bottom: 1px solid #000;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  padding: min(35vh, 20rem) 2rem 2rem 2rem;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
