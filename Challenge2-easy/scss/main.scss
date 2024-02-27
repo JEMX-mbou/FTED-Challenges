@@ -89,3 +89,17 @@ nav {
     }
   }
 }
+
+#choose {
+  height: 30rem;
+
+  .container {
+    div {
+      height: 20rem;
+    }
+
+    div:first-of-type {
+      background-color: v.g("a-1");
+    }
+  }
+}

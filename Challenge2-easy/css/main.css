@@ -5105,4 +5105,14 @@ nav {
   margin-right: 1rem;
 }
 
+#choose {
+  height: 30rem;
+}
+#choose .container div {
+  height: 20rem;
+}
+#choose .container div:first-of-type {
+  background-color: var(--accent-1);
+}
+
 /*# sourceMappingURL=main.css.map */
