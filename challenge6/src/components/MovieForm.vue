@@ -45,11 +45,6 @@ function addMovie() {
     errorMessages.title = ''
   }
 
-  console.log(year.value < 1900)
-  console.log(year.value > new Date().getFullYear())
-
-  console.log(year.value < 1900 || year.value > new Date().getFullYear())
-
   if (!year.value) {
     errorMessages.year = 'Year is required'
   } else if (year.value < 1900 || year.value > new Date().getFullYear()) {
